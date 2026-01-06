@@ -3,23 +3,18 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>滝花合衆国NEWS</title>
-  <meta name="description" content="滝花合衆国のニュースサイト" />
+  <title>滝花合衆国NEWS 記事一覧</title>
+  <meta name="description" content="滝花合衆国のニュース一覧" />
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/list.css">
 </head>
 <body>
-  <main class="container" role="main">
-    <header class="hero" role="banner">
+  <main class="container" role="main" id="main">
+    <header class="hero" role="banner" aria-labelledby="site-title">
       <div class="emblem" aria-hidden="true">
-        <!-- 必要なら /assets/emblem.svg に差し替え -->
         <img src="assets/emblem.svg" alt="滝花合衆国 紋章" onerror="this.style.display='none'">
         <svg class="fallback" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <defs>
-            <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
-              <stop offset="0" stop-color="#f6d365"/>
-              <stop offset="1" stop-color="#f39c12"/>
-            </linearGradient>
-          </defs>
+          <defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#f6d365"/><stop offset="1" stop-color="#f39c12"/></linearGradient></defs>
           <rect x="6" y="18" width="52" height="34" rx="6" fill="#b71c1c"/>
           <path d="M32 6 L40 18 L24 18 Z" fill="url(#g)"/>
           <path d="M12 22 C20 10, 44 10, 52 22" fill="none" stroke="url(#g)" stroke-width="3" stroke-linecap="round"/>
@@ -29,44 +24,37 @@
 
       <div class="hero-text">
         <div class="site-label">滝花合衆国NEWS</div>
-        <h1 class="site-title">滝花合衆国</h1>
-        <div class="headline">匿名帝国に勝利</div>
-      </div>
-
-      <div class="hero-actions">
-        <button id="themeToggle" class="btn small">テーマ切替</button>
-        <button id="shareBtn" class="btn small">共有</button>
+        <h1 class="site-title" id="site-title">記事一覧</h1>
+        <div class="headline">最新の出来事をまとめてチェック</div>
       </div>
     </header>
 
-    <article class="article" role="article" aria-labelledby="news-title">
-      <h2 id="news-title">匿名帝国に勝利</h2>
-
-      <p>
-        度重なる匿名帝国の奇襲を耐え抜き、相手を追い払った勇敢な滝花国民の皆さんのおかげで勝利をつかむことができました。
-      </p>
-
-      <p>
-        匿名帝国に総攻撃できなかったことが唯一の後悔でありますが、もうこれ以上匿名帝国にいつ攻撃されるかわからない状況が起こらないということはとても大きいことであり、滝花の強さと執念深さの象徴です。
-      </p>
-
-      <p>
-        滝花の首都が壊されたことは大きな被害でしたが、これからもう二度とこのような攻撃がないように、攻撃力を高めるように努力しましょう。
-      </p>
-
-      <div class="meta">
-        <span id="publishDate">発行日: —</span>
-        <span>・ 投稿者: 滝花合衆国広報</span>
+    <section class="controls" aria-label="検索とフィルタ">
+      <div class="search-wrap">
+        <label for="q" class="visually-hidden">検索</label>
+        <input id="q" type="search" placeholder="記事を検索する" aria-label="記事を検索する">
       </div>
-    </article>
+
+      <div class="filters" id="tagFilters" aria-hidden="false">
+        <!-- タグボタンはJSで生成 -->
+      </div>
+    </section>
+
+    <section id="list" class="list" aria-live="polite" aria-label="記事一覧">
+      <!-- 記事カードをここに挿入 -->
+    </section>
+
+    <nav class="pagination" id="pagination" aria-label="ページネーション">
+      <!-- ページネーションをここに挿入 -->
+    </nav>
 
     <footer class="footer" role="contentinfo">
       <div>© 滝花合衆国</div>
       <div class="footer-note">このサイトは Minecraft 建国サーバー「エルボ」内の非公式ニュースサイトです</div>
-      <a class="top-link" href="#top">↑ トップへ</a>
+      <a class="top-link" href="index.html">トップへ</a>
     </footer>
   </main>
 
-  <script src="js/script.js" defer></script>
+  <script src="js/list.js" defer></script>
 </body>
 </html>
