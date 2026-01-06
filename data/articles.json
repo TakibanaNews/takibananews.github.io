@@ -1,0 +1,32 @@
+[
+  {
+    "id": "2026-01-06-victory",
+    "title": "匿名帝国に勝利",
+    "excerpt": "度重なる奇襲を耐え抜き、相手を追い払った勇敢な滝花国民のおかげで勝利をつかみました。",
+    "date": "2026-01-06",
+    "tags": ["戦況","広報"],
+    "thumb": "assets/thumbs/victory.jpg",
+    "url": "article/victory.html",
+    "content": "（本文全文）"
+  },
+  {
+    "id": "2025-12-20-rebuild",
+    "title": "首都復興計画を発表",
+    "excerpt": "被害を受けた首都の復興計画と今後の防衛強化方針を発表しました。",
+    "date": "2025-12-20",
+    "tags": ["復興","政策"],
+    "thumb": "assets/thumbs/rebuild.jpg",
+    "url": "article/rebuild.html",
+    "content": "（本文全文）"
+  },
+  {
+    "id": "2025-11-10-economy",
+    "title": "経済支援パッケージの詳細",
+    "excerpt": "被災者支援とインフラ再建のための経済支援パッケージを公開しました。",
+    "date": "2025-11-10",
+    "tags": ["経済","支援"],
+    "thumb": "assets/thumbs/economy.jpg",
+    "url": "article/economy.html",
+    "content": "（本文全文）"
+  }
+]
